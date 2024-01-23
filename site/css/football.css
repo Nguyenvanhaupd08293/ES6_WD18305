@@ -1,0 +1,232 @@
+ .slider_banner_foot {
+     display: flex;
+     padding: 95px 10px 10px 10px;
+     max-width: 80%;
+     margin: 0 auto;
+     align-items: center;
+     position: relative;
+     overflow: hidden;
+ }
+ 
+ .slider_main_foot {
+     transition: transform 0.25s linear;
+     display: flex;
+     position: relative;
+     width: 100%;
+ }
+ 
+ .slider_item_foot {
+     display: flex;
+     width: 100%;
+     height: 100%;
+     flex: 1 0 100%;
+     user-select: none;
+ }
+ 
+ .slider_img_foot {
+     display: block;
+     padding: 0 17px;
+     width: 100%;
+ }
+ 
+ .section-foot {
+     margin-top: 55px;
+ }
+ 
+ .hhh {
+     display: flex;
+     padding: 50px 10px 10px 100px;
+     max-width: 80%;
+     margin: 0 auto;
+     align-items: center;
+ }
+ 
+ .img_user img {
+     width: 50%;
+     border-radius: 50%;
+ }
+ 
+ .icon_cmt {
+     color: rgb(234, 223, 20);
+ }
+ 
+ .cmt_user {
+     display: flex;
+     padding-bottom: 10px;
+ }
+ 
+ .wrap_user {
+     margin-left: -100px;
+ }
+ 
+ .link_user p {
+     max-width: 90%;
+ }
+ 
+ .link_user_cmt p {
+     color: rgb(87, 143, 233);
+     margin-top: 10px;
+ }
+ 
+ .link_user_cmt p a {
+     color: rgb(9, 9, 9);
+     margin-top: 10px;
+ }
+ 
+ .new-container {
+     margin-top: 5px;
+     margin-left: 80px;
+ }
+ 
+ .blog_fb {
+     text-decoration: none;
+ }
+ 
+ .blog_fb {
+     background-color: #f5f5f5;
+     height: 50px;
+     box-shadow: #e7e7e7 0px -1px 0px 0px;
+ }
+ 
+ .blog_header_test {
+     padding: 10px 0px;
+ }
+ 
+ .blog_header_test a {
+     color: #747474;
+     text-decoration: none;
+ }
+ 
+ .pro-new-fb {
+     display: flex;
+     padding: 4px 10px 10px 60px;
+     max-width: 80%;
+     margin: 0 auto;
+     justify-content: space-between;
+     align-items: center;
+     overflow: hidden;
+ }
+ 
+ .prefume_menu_list {
+     flex: 0 0 25%;
+     margin-top: 30px;
+     padding-right: 15px;
+ }
+ 
+ .prefume_menu_list ul {
+     list-style-type: none;
+ }
+ 
+ .prefume_menu_list li:not(:last-child) {
+     border-bottom: 1px dashed #ccc;
+ }
+ 
+ .top-fb {
+     color: rgb(6, 12, 40);
+     display: flex;
+     padding: 4px 10px 10px 10px;
+     width: 85%;
+     margin: 0 auto;
+     justify-content: space-between;
+     align-items: center;
+ }
+ 
+ .prefume_product {
+     display: flex;
+     width: 100%;
+ }
+ 
+ .product_list_featured {
+     flex: 0 0 75%;
+ }
+ 
+ .product_item_perfume {
+     width: 65%;
+     max-width: 100%;
+     margin-bottom: 20px;
+     padding: 0 10px;
+ }
+ 
+ .product_img-box {
+     position: relative;
+     overflow: hidden;
+     max-width: 100%;
+     /* height: 295px; */
+     cursor: pointer;
+     display: block;
+     text-decoration: none;
+ }
+ 
+ .product_img-box:hover .product_img-2 {
+     opacity: 1;
+ }
+ 
+ .product_img-box img {
+     width: 100%;
+     /* height: 100%; */
+     object-fit: cover;
+     object-position: center;
+     transition: all .3s ease-in;
+ }
+ 
+ .product_img-2 {
+     position: absolute;
+     top: 0;
+     left: 0;
+     opacity: 0;
+ }
+ 
+ .product_list_perfume {
+     margin-top: 30px;
+     display: flex;
+     margin-bottom: 20px;
+     margin-right: -10px;
+     margin-left: -10px;
+ }
+ 
+ .product_list_featured h1 {
+     font-size: 25px;
+     font-weight: 700;
+     margin-top: 20px;
+     color: var(--title-color);
+ }
+ 
+ .prefume_menu_list li {
+     padding-top: 12px;
+     padding-bottom: 12px;
+     /* font-size: 1.4rem; */
+     font-weight: 500;
+     font-size: 92.5%;
+     font-family: 'Quicksand', sans-serif;
+     scroll-behavior: smooth;
+ }
+ 
+ .pagination {
+     margin: 35px 0 30px 0;
+     text-align: end;
+ }
+ 
+ .pagination_title {
+     font-weight: 700;
+     margin-right: 10px;
+     text-align: center;
+ }
+ 
+ .page {
+     text-align: center;
+     font-weight: 500;
+     font-size: 0.8rem;
+     padding: 7px 10px;
+     transition: all .25s ease;
+     cursor: pointer;
+     text-decoration: none;
+     color: white;
+     background: #747474;
+     background-size: 100px 50px;
+ }
+ 
+ .page:hover {
+     background-color: white;
+     background-size: 100px 50px;
+     color: gray;
+ }
