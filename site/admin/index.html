@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-info">
+        <div class="container-fluid">
+            <!-- Navbar brand/logo -->
+            <a class="navbar-brand" href="#">HẬUSPORT</a>
+
+            <!-- Toggle button for mobile -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                         <span class="navbar-toggler-icon"></span>
+                     </button>
+
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../admin/index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./modules/quanlyProduct/add.html">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./modules/quanlyDanhmuc/add.html">Categories</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./modules/quanlyOrder/list.html">Orders</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./modules/quanlyCustomer/handle.html">Customers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./modules/quanlyCustomer/">Statistical</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Logout</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Main Content -->
+    <div class="container mt-4">
+        <h1>Welcome to HẬUSPORT Admin</h1>
+        <p>Tại đây bạn có thể quản lý sản phẩm, danh mục, đơn đặt hàng và khách hàng của mình.</p>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Product Management</h5>
+                        <p class="card-text">Quản lý sản phẩm của bạn, thêm sản phẩm mới, cập nhật hoặc xóa sản phẩm hiện có.</p>
+                        <a href="../admin/modules/quanlyProduct/add.html" class="btn btn-primary">Go to Product Management</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Category Management</h5>
+                        <p class="card-text">Quản lý danh mục sản phẩm của bạn, tạo danh mục mới, cập nhật hoặc xóa danh mục.</p>
+                        <a href="../admin/modules/quanlyDanhmuc/add.html" class="btn btn-primary">Go to Category Management</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Orders Management</h5>
+                        <p class="card-text">Quản lý đơn đặt hàng sản phẩm của khách hàng, xem thông tin chi tiết đơn hàng.</p>
+                        <a href="../admin/modules/quanlyOrder/list.html" class="btn btn-primary">Go to Orders Management</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Customers Management</h5>
+                        <p class="card-text">Quản lý thông tin của khách hàng, có thể xoá đi khách hàng không mong muốn.</p>
+                        <a href="../admin/modules/quanlyCustomer/handle.html" class="btn btn-primary">Go to Customers Management</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

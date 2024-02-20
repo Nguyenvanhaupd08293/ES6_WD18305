@@ -1,0 +1,21 @@
+{
+    "product": [{
+            "name": "Áo Manchester City",
+            "image1": "path1.jpg",
+            "image2": "path2.jpg",
+            "price": 1811000,
+            "quantity": 123,
+            "description": "loremloremloremloremloremloremloremloremloremlorem",
+            "categoryID": 1
+        },
+        {
+            "name": "Áo Manchester City 2",
+            "image1": "path1.jpg",
+            "image2": "path2.jpg",
+            "price": 1011000,
+            "quantity": 193,
+            "description": "loremloremloremloremloremloremloremloremloremlorem",
+            "categoryID": 1
+        }
+    ]
+}

@@ -46,3 +46,38 @@ window.addEventListener('load', function() {
         })
     })
     //scroll
+
+const listRelated = document.querySelector('.product_related-main');
+const productItem = document.querySelector('.product_related-main .product_item');
+const productItemWidth = productItem.offsetWidth;
+
+let debounceTimeout;
+
+function handleNextClick() {
+    if (debounceTimeout) {
+        clearTimeout(debounceTimeout);
+    }
+
+    debounceTimeout = setTimeout(() => {
+        listRelated.scrollLeft += productItemWidth;
+    }, 200);
+}
+btnNext.addEventListener('click', handleNextClick);
+
+function handlePrevClick() {
+    if (debounceTimeout) {
+        clearTimeout(debounceTimeout);
+    }
+
+    debounceTimeout = setTimeout(() => {
+        listRelated.scrollLeft -= productItemWidth;
+    }, 200);
+}
+btnPrev.addEventListener('click', handlePrevClick);
+
+listRelated.addEventListener('wheel', function(e) {
+    console.log(this);
+    e.preventDefault();
+    const delta = e.deltaY * 3.3;
+    this.scrollLeft += delta;
+});

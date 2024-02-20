@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+    }
+    
+    #form-container {
+        background-color: #fff;
+        padding: 40px;
+        border: 1px solid #d3c8c8;
+        border-radius: 5px;
+        width: 303px;
+        margin: 50px auto;
+    }
+    
+    #form-header {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px;
+    }
+    
+    #form-header span {
+        cursor: pointer;
+    }
+    
+    #register-form input {
+        width: 100%;
+        padding: 8px;
+        margin-top: 5px;
+        margin-bottom: 10px;
+        border: 2px solid #ccc;
+        border-radius: 3px;
+        font-size: 15px;
+    }
+    
+    a {
+        text-decoration: none;
+        color: #136fd1;
+    }
+    
+    a #register-tab::after {
+        background: #2b68e2;
+        content: "";
+        display: block;
+        width: 75px;
+        height: 4px;
+        margin-top: 5px;
+        margin-bottom: 11px;
+    }
+    
+    .active {
+        color: #007bff;
+    }
+    
+    button {
+        width: 100%;
+        padding: 10px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+    }
+    
+    button:hover {
+        background-color: #0056b3;
+    }
+</style>
+
+<body>
+
+    <div id="form-container">
+        <div id="form-header">
+            <a href="login.html"><span id="login-tab" >ĐĂNG NHẬP</span></a>
+            <a href="sigup.html"><span id="register-tab" class="active">ĐĂNG KÝ</span></a>
+        </div>
+        <form id="register-form">
+            <label for="phone">Điện thoại:</label>
+            <input type="text" id="phone" name="phone" placeholder="Điện thoại của bạn" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Email của bạn" required>
+
+            <label for="address">Địa chỉ:</label>
+            <input type="text" id="address" name="address" placeholder="Địa chỉ của bạn" required>
+
+            <label>Giới tính:</label>
+            <input type="radio" id="male" name="gender" value="Nam">
+            <label for="male">Nam</label>
+            <input type="radio" id="female" name="gender" value="Nữ">
+            <label for="female">Nữ</label>
+
+            <label for="birthdate">Ngày sinh:</label>
+            <input type="date" id="birthdate" name="birthdate" required>
+
+            <label for="password">Mật khẩu:</label>
+            <input type="password" id="password" name="password" placeholder="Mật khẩu tối thiểu 8 kí tự" minlength="8" required>
+
+            <label for="confirm_password">Nhập lại mật khẩu:</label>
+            <input type="password" id="confirm_password" name="confirm_password" placeholder="Mật khẩu tối thiểu 8 kí tự" minlength="8" required>
+
+            <button type="submit">Đăng ký</button>
+        </form>
+        <p>Bạn đã có tài khoản? <a href="/login">Đăng nhập</a></p>
+    </div>
+    <script>
+        document.getElementById('login-tab').addEventListener('click', function() {
+            document.getElementById('register-form').style.display = 'none';
+            // Hiển thị form đăng nhập (đã cung cấp hoặc tạo mới)
+        });
+
+        document.getElementById('register-tab').addEventListener('click', function() {
+            document.getElementById('register-form').style.display = 'block';
+            // Ẩn form đăng nhập (nếu cần) và hiển thị form đăng ký
+        });
+    </script>
+</body>
+
+</html>

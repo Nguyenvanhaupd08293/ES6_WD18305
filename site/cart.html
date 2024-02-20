@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/football.css">
+    <link rel="stylesheet" href="./css/cart.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <script src="./js/script.js"></script>
+    <title>hausprort</title>
+</head>
+
+<body>
+    <header class="header-section sticky">
+        <section class="top-menu-nav">
+            <div class="top contain">
+                <div class="top-nav">
+                    <strong>Welcome to HauSport</strong>
+                </div>
+                <div class="admin">
+                    <a href="#"><i class="fas fa-key"></i> Admin</a>
+                </div>
+            </div>
+        </section>
+        <section class="layout2">
+            <div class="menu nav-logo">
+                <div class="logo">
+                    <a href="../site/index.html">HAUSPORT</a>
+                </div>
+                <div class="nav-ul">
+                    <ul>
+                        <li><a href="../site/football.html">Áo bóng đá</a></li>
+                        <li><a href="./detail.html">Áo bóng chuyền</a></li>
+                        <li><a href="../site/accessory.html">Phụ kiện</a></li>
+                        <li><a href="">Giới thiệu</a></li>
+                        <li><a href="">Liên hệ</a></li>
+                    </ul>
+                </div>
+                <div class="above-item header_search wraper" id="search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <span>Tìm kiếm</span>
+                    <div class="search-block">
+                        <form action="#" name="" method="POST" class="search-form">
+                            <input type="text" class="search-input" name="search-item" placeholder="Nhập từ khoá tìm kiếm">
+                            <button type="submit" name="submit-search"><i class="fa-solid fa-magnifying-glass search-icon"></i></button>
+                        </form>
+                    </div>
+                </div>
+                <div class="icon">
+                    <a href="../site/cart.html"><i class="fa fa-cart-plus"></i></a>
+                    <a href="../site/admin/login.html"><i class="fa fa-user"></i></a>
+                </div>
+            </div>
+        </section>
+    </header>
+    <div class="main_footbal">
+        <div class="blog_fb cart">
+            <div class="top">
+                <div class="blog_header_test">
+                    <span><a href="#">Trang chủ</a></span>
+                    <span>/</span>
+                    <a href="#">Giỏ hàng</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container_cart">
+        <h1 class="h1_cart">Giỏ hàng</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Hình ảnh</th>
+                    <th>Tên sản phẩm</th>
+                    <th>Số lượng</th>
+                    <th>Giá</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><img src="https://via.placeholder.com/100" alt="Product 1" class="product-img"></td>
+                    <td>Áo Polo</td>
+                    <td>
+                        <input type="number" class="quantity" value="1" min="1">
+                    </td>
+                    <td>200,000 VND</td>
+                </tr>
+                <tr>
+                    <td><img src="https://via.placeholder.com/100" alt="Product 2" class="product-img"></td>
+                    <td>Quần Jean</td>
+                    <td>
+                        <input type="number" class="quantity" value="1" min="1">
+                    </td>
+                    <td>300,000 VND</td>
+                </tr>
+                <!-- Add more rows for additional products -->
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3" class="total">Tổng cộng:</td>
+                    <td class="total">500,000 VND</td>
+                </tr>
+            </tfoot>
+        </table>
+        <div class="payment-method">
+            <form action="/process_payment" method="post">
+                <h2>Thông tin giao hàng:</h2>
+                <label for="fullname">Họ và tên:</label><br>
+                <input type="text" id="fullname" name="fullname" placeholder="Nhập họ và tên"><br>
+
+                <label for="phone">Số điện thoại:</label><br>
+                <input type="text" id="phone" name="phone" placeholder="Nhập số điện thoại"><br>
+
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" placeholder="Nhập email"><br>
+
+                <label for="address">Địa chỉ:</label><br>
+                <input type="text" id="address" name="address" placeholder="Nhập địa chỉ"><br>
+
+                <label for="note">Ghi chú:</label><br>
+                <textarea id="note" name="note" placeholder="Nhập ghi chú"></textarea><br>
+
+                <h2>Chọn phương thức thanh toán:</h2>
+                <input type="radio" id="credit_card" name="payment_method" value="credit_card">
+                <label for="credit_card">Thanh toán qua thẻ tín dụng</label><br>
+                <input type="radio" id="cod" name="payment_method" value="cod">
+                <label for="cod">Thanh toán khi nhận hàng (COD)</label><br>
+                <input type="radio" id="paypal" name="payment_method" value="paypal">
+                <label for="paypal">Thanh toán qua PayPal</label><br>
+                <!-- Add more payment methods as needed -->
+                <div class="button_cart">
+                    <button class="btn1">Tiếp tục mua sản phẩm</button>
+                    <button class="btn" type="submit">Hoàn thành đơn hàng</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <footer class="container">
+        <section class="footer-back">
+            <div class="footer wraper">
+                <div class="footer-block">
+                    <div class="logo_footer">
+                        <a href="#">HAUSPORT</a>
+                    </div>
+                </div>
+                <div class="footer-block">
+                    <span class="footer-title">SẢN PHẨM</span>
+                    <ul class="footer-list">
+                        <li class="footer-item"><a href="#!">ÁO BÓNG ĐÁ</a></li>
+                        <li class="footer-item"><a href="#!">ÁO ĐỘI TUYỂN</a></li>
+                        <li class="footer-item"><a href="#!">BALO</a></li>
+                        <li class="footer-item"><a href="#!">GIÀY THỂ THAO</a></li>
+                        <li class="footer-item"><a href="#!">PHỤ KIÊN</a></li>
+                    </ul>
+                </div>
+                <div class="footer-block">
+                    <span class="footer-title">VỀ CHÚNG TÔI</span>
+                    <ul class="footer-list">
+                        <li class="footer-item"><a href="#!">CHÍNH SÁCH MUA SẮM</a></li>
+                        <li class="footer-item"><a href="#!">CÂU CHUYỆN THƯƠNG HIỆU</a></li>
+                        <li class="footer-item"><a href="#!">HỆ THỐNG CỬA HÀNG</a></li>
+                        <li class="footer-item"><a href="#!">THÔNG CÁO BÁO CHÍ</a></li>
+                        <li class="footer-item"><a href="#!">LIÊN HỆ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-block">
+                    <span class="footer-title">VỀ CHÚNG TÔI</span>
+                    <ul class="footer-list">
+                        <li class="footer-item"><a href="#!">CHÍNH SÁCH MUA SẮM</a></li>
+                        <li class="footer-item"><a href="#!">CÂU CHUYỆN THƯƠNG HIỆU</a></li>
+                        <li class="footer-item"><a href="#!">HỆ THỐNG CỬA HÀNG</a></li>
+                        <li class="footer-item"><a href="#!">THÔNG CÁO BÁO CHÍ</a></li>
+                        <li class="footer-item"><a href="#!">LIÊN HỆ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-block">
+                    <div class="social wraper">
+                        <img src="https://sixdo.vn/images/ic-fb.svg" alt="" class="social-logo">
+                        <img src="https://sixdo.vn/images/ic-instagram.svg" alt="" class="social-logo">
+                        <img src="https://sixdo.vn/images/ic-yt.svg" alt="" class="social-logo">
+                        <img src="https://sixdo.vn/images/ic-tictok.svg" alt="" class="social-logo">
+                        <img src="https://sixdo.vn/images/ic-shopee.png" alt="" class="social-logo">
+                    </div>
+                    <img src="https://sixdo.vn/images/Thongbaobocongthuong.svg" alt="" class="footer-ratify">
+                </div>
+            </div>
+            <div class="copyright">©2023 This template is made with by Nguyen Van Hau </div>
+        </section>
+    </footer>
+</body>
+
+</html>

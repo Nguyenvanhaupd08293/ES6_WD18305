@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HẬUSPORT Admin</title>
+    <!-- Link to Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css">
+    <style>
+        td {
+            word-wrap: break-word;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-info">
+        <div class="container-fluid">
+            <!-- Navbar brand/logo -->
+            <a class="navbar-brand" href="#">HẬUSPORT ADMIN</a>
+
+            <!-- Toggle button for mobile -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.php">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.php?action=quanlysanpham&query=add">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.php?action=quanlydanhmuc&query=add">Categories</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.php?action=quanlydonhang&query=lietke">Orders</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.php?action=quanlykhachhang&query=lietke">Customers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.php?action=quanlythongke&query=lietke">Statistical</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.php?dangxuat=1">Logout</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container mt-3 mb-5">
+        <h2>Sửa sản phẩm</h2>
+        <form method="POST" id="productForm" action="modules/quanlyproduct/handle.php?idproduct=50" enctype="multipart/form-data">
+            <div class="mb-3">
+                <label for="productName" class="form-label">Tên sản phẩm:</label>
+                <input type="text" class="form-control" id="productName" name="productName" required value="Sữa tắm BST Lumin - Lemon Cedar 300ml">
+            </div>
+            <div class="mb-3">
+                <label for="productImage" class="form-label">Hình ảnh:</label>
+                <input type="file" class="form-control mb-2" id="productImage" name="productImage">
+                <img src="modules/quanlyproduct/uploads/1701960827_suatam_11.webp" alt="" class="img-fluid" style="width: 200px;">
+            </div>
+            <div class="mb-3">
+                <label for="productImage2" class="form-label">Hình ảnh hover:</label>
+                <input type="file" class="form-control mb-2" id="productImage2" name="productImage2">
+                <img src="modules/quanlyproduct/uploads/1701960827_suatam_21.webp" alt="" class="img-fluid" style="width: 200px;">
+            </div>
+            <div class="mb-3">
+                <label for="productPrice" class="form-label">Giá mới:</label>
+                <input type="text" class="form-control" id="productPrice" name="productPrice" required value="247000">
+            </div>
+            <div class="mb-3">
+                <label for="productPriceOld" class="form-label">Giá gốc:</label>
+                <input type="text" class="form-control" id="productPriceOld" name="productPriceOld" required value="260000">
+            </div>
+            <div class="mb-3">
+                <label for="productQuantity" class="form-label">Số lượng:</label>
+                <input type="text" class="form-control" id="productQuantity" name="productQuantity" required value="56">
+            </div>
+            <div class="mb-3">
+                <label for="productDesc" class="form-label">Nội dung:</label>
+                <input type="text" class="form-control" id="productDesc" name="productDesc" value="Lemon Cedar là sự tươi mát từ hương cam chanh và quả mọng.">
+            </div>
+            <div class="mb-3">
+                <label for="productStatus" class="form-label">Danh mục navbar:</label>
+                <select class="form-select" name="productCategory">
+                                                <option value="1">Nước hoa</option>
+                                                <option value="2">Nến thơm</option>
+                                                <option selected value="3">Sữa tắm</option>
+                                        </select>
+            </div>
+            <div class="mb-3">
+                <label for="productStatus" class="form-label">Tình trạng:</label>
+                <select class="form-select" name="productStatus">
+                                            <option value="1" selected>Kích hoạt</option>
+                        <option value="0">Ẩn</option>
+                                    </select>
+            </div>
+            <button type="submit" name="editproduct" class="btn btn-warning">Update</button>
+        </form>
+    </div>
+
+    <!-- Link to Bootstrap JS (required for the mobile toggle functionality) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"></script>
+</body>
+
+</html>

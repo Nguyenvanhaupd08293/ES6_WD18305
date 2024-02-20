@@ -1,0 +1,134 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container_cart {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+h1 {
+    text-align: center;
+}
+
+.h1_cart {
+    padding: 10px;
+    font-size: 1.5rem;
+    color: #dc3545;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table,
+th,
+td {
+    border: 1px solid #ddd;
+}
+
+th,
+td {
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+.product-img {
+    width: 100px;
+    height: auto;
+}
+
+.quantity {
+    width: 50px;
+    text-align: center;
+}
+
+.total {
+    font-weight: bold;
+}
+
+.btn1 {
+    background-color: #dc3545;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn1:hover {
+    background-color: #bd2130;
+}
+
+.payment-method {
+    margin-top: 20px;
+}
+
+.payment-method h2 {
+    margin-bottom: 10px;
+}
+
+.payment-method input[type="radio"] {
+    margin-right: 10px;
+}
+
+.payment-method .btn {
+    display: block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.payment-method .btn:hover {
+    background-color: #0056b3;
+}
+
+.cart {
+    margin-top: 90px;
+}
+
+.payment-method input[type="text"],
+.payment-method input[type="email"],
+.payment-method textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.payment-method textarea {
+    height: 100px;
+}
+
+.button_cart {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0 0 0;
+}

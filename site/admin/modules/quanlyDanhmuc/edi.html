@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MORRA Admin</title>
+    <!-- Link to Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css">
+    <style>
+        td {
+            word-wrap: break-word;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-info">
+        <div class="container-fluid">
+            <!-- Navbar brand/logo -->
+            <a class="navbar-brand" href="#">MORRA ADMIN</a>
+
+            <!-- Toggle button for mobile -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.php">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.php?action=quanlysanpham&query=add">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.php?action=quanlydanhmuc&query=add">Categories</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.php?action=quanlydonhang&query=lietke">Orders</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.php?action=quanlykhachhang&query=lietke">Customers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.php?action=quanlythongke&query=lietke">Statistical</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.php?dangxuat=1">Logout</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <h2>Sửa danh mục sản phẩm</h2>
+        <form method="POST" id="categoryForm" action="modules/quanlycategory/handle.php?idcategory=1">
+            <div class="mb-3">
+                <label for="categoryName" class="form-label">Tên danh mục:</label>
+                <input type="text" class="form-control" id="categoryName" name="categoryName" required value="Nước hoa">
+            </div>
+            <div class="mb-3">
+                <label for="categoryNumber" class="form-label">Thứ tự danh mục:</label>
+                <input type="text" class="form-control" id="categoryNumber" name="categoryNumber" required value="1">
+            </div>
+            <button type="submit" name="editcategory" class="btn btn-warning">Update</button>
+        </form>
+    </div>
+
+    <!-- Link to Bootstrap JS (required for the mobile toggle functionality) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"></script>
+</body>
+
+</html>
