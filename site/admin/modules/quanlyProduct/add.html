@@ -57,7 +57,7 @@
     </nav>
     <div class="container mt-3">
         <h2>Thêm sản phẩm</h2>
-        <form method="POST" id="productForm" action="modules/quanlyproduct/handle.php" enctype="multipart/form-data">
+        <form method="POST" id="addProductForm" action="" enctype="multipart/form-data">
             <div class="mb-3">
                 <label for="productName" class="form-label">Tên sản phẩm:</label>
                 <input type="text" class="form-control" id="productName" name="productName" required>
@@ -72,8 +72,8 @@
             </div>
 
             <div class="mb-3">
-                <label for="productPriceOld" class="form-label">Giá:</label>
-                <input type="text" class="form-control" id="productPriceOld" name="productPriceOld" required>
+                <label for="productPrice" class="form-label">Giá:</label>
+                <input type="text" class="form-control" id="productPrice" name="productPrice" required>
             </div>
             <div class="mb-3">
                 <label for="productQuantity" class="form-label">Số lượng:</label>
@@ -85,10 +85,10 @@
             </div>
             <div class="mb-3">
                 <label for="productStatus" class="form-label">Danh mục navbar:</label>
-                <select class="form-select" name="productCategory">
-                                    <option value="1">Nước hoa</option>
-                                    <option value="2">Nến thơm</option>
-                                    <option value="3">Sữa tắm</option>
+                <select class="form-select" name="productCategory" id="productCategory">
+                                    <option value="1">Áo bóng đá</option>
+                                    <option value="2">Áo bóng chuyền</option>
+                                    <option value="3">Phụ kiện</option>
                             </select>
             </div>
 
@@ -107,7 +107,6 @@
                     <th scope="col">Hình ảnh</th>
                     <th scope="col">Hình ảnh hover</th>
                     <th scope="col">Giá</th>
-                    <th scope="col">Giá gốc</th>
                     <th scope="col">Số lượng</th>
                     <th scope="col">Danh mục navbar</th>
                     <th scope="col">Description</th>
@@ -116,8 +115,6 @@
                 </tr>
             </thead>
             <tbody id="listProduct">
-
-
             </tbody>
         </table>
     </div>
@@ -125,7 +122,8 @@
     <!-- Link to Bootstrap JS (required for the mobile toggle functionality) -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"></script>
     <script src="../../../js/quanlyProduct/getProduct.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <!-- <script src="../../../js/quanlyProduct/removeProduct.js" defer></script> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script> -->
 </body>
 
 </html>
